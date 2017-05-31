@@ -17,7 +17,7 @@ void setup() {
   Wire.begin();
 
   unsigned int addressCode = 0x00;
-  magnet.generalReset(); // this row needs extra help if power-on is slow
+  magnet.generalReset();
 
   magnet = TLV493D();
   magnet.begin(initPin);
