@@ -71,7 +71,7 @@ void TLV493D::generalReset(void)
  // may be needed if power doesn't come on quickly
  Wire.requestFrom(0x00,1);
  delayMicroseconds(1000);
- Wire.write(0x00,0xFF);
+ Wire.write((byte)0x00);
  Wire.endTransmission();
  delayMicroseconds(1000);
 }
